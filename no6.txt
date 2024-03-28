@@ -1,0 +1,21 @@
+# Define the number of rows and columns
+rows = 5
+cols = 5
+
+# Create an empty grid filled with "+" symbols
+grid = []
+for i in range(rows):
+  row = []
+  for j in range(cols):
+    row.append("+")
+  grid.append(row)
+
+# Fill the last row with numbers 1 to 5
+for j in range(cols):
+  grid[rows - 1][j] = str(j + 1)
+
+# Print the grid
+for row in grid:
+  for element in row:
+    print(element, end=" ")
+  print()

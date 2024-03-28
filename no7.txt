@@ -1,0 +1,18 @@
+# Define the number of rows and columns
+rows = 4
+cols = 5
+
+# Loop through each row
+for i in range(rows):
+  # Loop through each column
+  for j in range(cols):
+    # Calculate the combined index for pattern
+    combined_index = i + j
+
+    # Check if the combined index is even (print A) or odd (print B)
+    if combined_index % 2 == 0:
+      print("A", end=" ")
+    else:
+      print("B", end=" ")
+  # Print a newline after each row
+  print()

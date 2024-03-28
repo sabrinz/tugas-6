@@ -1,0 +1,31 @@
+def fibonacci(n):
+  """
+  Fungsi untuk menghitung nilai deret Fibonacci ke-n.
+  """
+  if n <= 1:
+    return n
+  else:
+    return fibonacci(n-1) + fibonacci(n-2)
+
+def main():
+  """
+  Fungsi utama untuk menampilkan pola segitiga bintang.
+  """
+  # Jumlah baris
+  n = 10
+
+  # Looping untuk setiap baris
+  for i in range(n):
+    # Menghitung jumlah bintang pada baris ke-i
+    jumlah_bintang = fibonacci(i)
+
+    # Mencetak bintang sebanyak jumlah_bintang
+    for j in range(jumlah_bintang):
+      print("*", end="")
+
+    # Menambahkan baris baru
+    print()
+
+if __name__ == "__main__":
+  main()
+

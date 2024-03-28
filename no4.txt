@@ -1,0 +1,16 @@
+# Define the number of rows
+rows = 5
+
+# Starting value for the first row
+start_value = 1
+
+# Loop through each row
+for i in range(rows):
+  # Print elements in the current row
+  for j in range(1, 6):
+    value = start_value + (j - 1) * 2
+    print(value, end=" ")
+  # Update starting value for the next row
+  start_value += 2
+  # Print a newline after each row
+  print()
